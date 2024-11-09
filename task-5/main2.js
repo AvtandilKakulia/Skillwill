@@ -9,6 +9,7 @@ let answer1 = document.getElementById('q1a3')
 let answer2 = document.getElementById('q2a2')
 let answer3 = document.getElementById('q3a1')
 let checkBtn = document.getElementById('checkBtn')
+let p = document.getElementById('showResult')
 
 checkBtn.addEventListener('click', () => {
     // აქ ხდება შედეგის დათვლა
@@ -20,7 +21,7 @@ checkBtn.addEventListener('click', () => {
     result = point1 + point2 + point3
 
     // აქ ხდება შეტყობინების გამოტანა
-    let p = document.createElement('p')
+    p.remove
     body.insertBefore(p,checkBtn.nextElementSibling)
     p.innerHTML = `შენ დააგროვე <span id="points">${result}</span> ქულა`
     
