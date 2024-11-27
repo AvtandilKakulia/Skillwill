@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+nav{
+    width: 100%;
+    height: 10vh;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+#LogIn{
+    margin-right: 20px;
+    background-color: transparent;
+    padding: 5px;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+#LogIn:active{
+    background-color: red;
+}
+
+.mainContent{
+    position: relative;
+    height: 75vh;
+    background-image: url('./img/Rectangle.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+}
+
+.mainContentMessage{
+    position: absolute;
+    bottom: 50px;
+    left: 150px;
+    width: 370px;
+}
+
+.mainContentMessage > span ,
+.mainContentMessage > h2{
+    color: white;
+}
+
+.cardsSection{
+    margin-top: 50px;
+    padding: 10% 5%;
+}
+
+.cardsSectionTiTle{
+    color: white;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 8px;
+    padding:7px;
+    border: 1px solid red;
+    width: 310px;
+    background-color: #383838;
+}
+
+
+.cardsSectionImg img{
+    width: 300px;
+    height: 160px;
+}
+
+.cardsSectionPost h2{
+    font-size: 14px;
+    font-weight: bolder;
+    color: white;
+}
+
+.cardsSectionPost span{
+    font-size: 10px;
+    display: block;
+    text-align: justify;
+    margin-top: 8px;
+    color: white;
+}
+
+.cardsSectionMore{
+    display: flex;
+    align-self: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.timer span{
+    font-size: 10px;
+    color: white;
+}
+
+.seemore{
+    display: flex;
+    align-items: center;
+    column-gap: 7px;
+    cursor: pointer;
+}
+.seemore span{
+    font-size: 10px;
+    color: white;
+}
+
+.seemore i{
+    color: white;
+}
+
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;            
+    transform: translate(-50%, -50%); 
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dNone{
+    display: none;
+}
+
+.modalDialogue{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 100px;
+    padding:15px;
+    background-color: white;
+}
+
+.close{
+    position: absolute;
+    right: 8px;
+    top: 15px;
+    cursor:pointer
+}
+
+.modalDialogue input{
+    border: 1px solid black;
+    padding: 5px;
+    margin-bottom: 5px;
+}
