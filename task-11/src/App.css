@@ -1,0 +1,35 @@
+.wrapper{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  column-gap: 30px;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+}
+
+.txtPart h1{
+  font-size: 50px;
+}
+
+.txtPart h3{
+  font-size: 46px;
+}
+
+.txtPart h1,
+.txtPart h3{
+  line-height: 0.5;
+  color: #002057;
+}
+
+.txtPart span{
+  color: #ff7b00;
+}
+
+
+.imgPart img{
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
