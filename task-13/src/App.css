@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.outerWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+}
+
+.mainTitle {
+    text-align: center;
+}
+
+.taskBoxWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+.toDoBox,
+.doneBox {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.toDoBox h3,
+.doneBox h3 {
+    text-align: center;
+}
+
+.taskList {
+    padding: 8px;
+}
+
+.taskList ol {
+    list-style-position: inside;
+}
+
+.taskList ol li{
+    margin: 10px 0;
+    border-bottom: 1px solid #ffdada;
+    padding-bottom: 5px;
+}
+
+.task {
+    display: inline-flex;
+    align-items: center;
+    width: calc(100% - 17px);
+}
+
+.taskDesc {
+    flex-grow: 1;
+    max-width: 100%;
+    word-break: break-word;
+}
+
+.btnDone {
+    background-color: #fff;
+    border: 1px solid #d5d9d9;
+    border-radius: 8px;
+    box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+    cursor: pointer;
+    font-size: 13px;
+    line-height: 25px;
+    min-width: 75px;
+    margin: 0 10px;
+}
+
+.btnDone:hover {
+    background-color: #f7fafa;
+}
+
+.btnDone:focus {
+    border-color: #008296;
+    box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+}
+
+.basket {
+    font-size: 22px;
+    color: #117787;
+    cursor: pointer;
+}
+
+.basket:hover {
+    color: #13b5ce;
+}
+
+.basket:active{
+    color: #117787;
+}
+
+.addToDo{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7fafa;
+    padding: 0 15px;
+    margin: 0 6px;
+    border-radius: 10px;
+    border: 1px solid  #d5d9d9;;
+}
+
+.addToDo input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding: 0 10px;
+    color: #117787;
+}
+
+.addToDo input::placeholder{
+    color: #117787;
+}
+
+.messageIcon,
+.addMessage{
+    color: #117787;
+}
+
+.addMessage{
+    cursor: pointer;
+}
+
+.addMessage:hover {
+    color: #13b5ce;
+}
+
+.addMessage:active{
+    color: #117787;
+}
+
+.hrline{
+    border: 1px solid #117787;
+    margin: 10px 0;
+}
+
